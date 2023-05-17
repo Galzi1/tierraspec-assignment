@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "\"npm run prebuild\" && npm start",
+    "start": "node index.js",
+    "prebuild": "cd .. && cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "gdal-async": "^3.6.4",
+    "jimp": "^0.22.8",
+    "pngjs": "^7.0.0"
+  }
+}
